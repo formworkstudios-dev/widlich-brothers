@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  siteName: "Nuxt 4 Template",
+  siteName: "Weidlich Brothers Tree Care",
   ui: {
     colors: {
       primary: "blue",
