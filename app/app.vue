@@ -1,9 +1,7 @@
 <template>
   <UApp>
     <NuxtRouteAnnouncer />
-    <header>
-      <SharedNav />
-    </header>
+    <SharedNav class="fixed" />
     <main>
       <NuxtPage />
     </main>

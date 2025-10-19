@@ -1,12 +1,14 @@
-<script setup lang="ts"></script>
+<script
+  setup
+  lang="ts"
+></script>
 
 <template>
-  <div>
-    <UContainer>
+  <HomeHero />
+  <HomeAbout />
+  <HomeServices />
+  <HomeContact />
 
-      <HomeHero />
-    </UContainer>
-  </div>
 </template>
 
 <style scoped></style>
