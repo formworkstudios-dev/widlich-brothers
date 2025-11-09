@@ -1,5 +1,6 @@
 export default defineAppConfig({
   siteName: "Weidlich Brothers Tree Care",
+  siteLogo: "/tree.png",
   ui: {
     button: {
       slots: {
