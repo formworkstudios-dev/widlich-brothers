@@ -87,9 +87,11 @@ onBeforeUnmount(() => {
       <!-- Parallax background layer -->
       <div
         class="absolute left-0 right-0 top-[-10%] h-[120%] -z-10 bg-cover bg-center will-change-transform pointer-events-none"
-        style="background-image: url('/pa.jpg')"
         aria-hidden="true"
-        :style="{ transform: `translate3d(0, ${parallaxY}px, 0)` }"
+        :style="{
+          backgroundImage: 'url(\'/tree-trunk-hero-weidlich-brothers.jpg\')',
+          transform: `translate3d(0, ${parallaxY}px, 0)`
+        }"
       />
       <HomeCTA />
       <HomeFAQ />

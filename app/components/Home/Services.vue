@@ -75,21 +75,11 @@ const services = [
                 v-if="service.features?.length"
                 class="mt-4 space-y-2 text-sm md:text-[0.95rem]"
               >
-                <li
+                <SharedCheck
                   v-for="(feat, i) in service.features"
                   :key="i"
-                  class="flex items-center gap-3"
-                >
-                  <span
-                    class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-600/15 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300"
-                  >
-                    <UIcon
-                      name="i-mdi-check"
-                      class="text-sm"
-                    />
-                  </span>
-                  <span class="text-amber-900 dark:text-amber-100">{{ feat }}</span>
-                </li>
+                  :label="feat"
+                />
               </ul>
               <div class="mt-5">
                 <NuxtLink

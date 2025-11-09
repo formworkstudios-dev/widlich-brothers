@@ -17,8 +17,33 @@
     </div>
     <UContainer class="flex-1 flex justify-center">
       <div class="w-full max-w-2xl mx-auto">
-        <p class="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-          consectetur cursus, nisl erat dictum urna, nec dictum enim enim nec enim.</p>
+        <ServiceIntro
+          service-name="Tree Trimming & Pruning"
+          description="Health-focused trimming and structural pruning to improve safety, shape, sunlight penetration, and long-term tree vitality."
+        />
+        <ServiceDetails
+          service-name="Tree Trimming & Pruning"
+          :details="[
+            'Deadwood and hazard limb removal',
+            'Canopy thinning & crown raising',
+            'Structural & corrective pruning',
+            'Storm damage mitigation cuts'
+          ]"
+        />
+        <ServiceArea
+          service-name="Tree Trimming & Pruning"
+          description="Serving Pittston, Scranton, the Poconos and broader Northeast PA residential and commercial properties."
+        />
+        <div class="mt-10">
+          <ServiceFAQ
+            title="Trimming & Pruning FAQs"
+            :items="faqItems"
+          />
+        </div>
+        <ServiceOtherServices
+          class="mt-12"
+          self="trimming-pruning"
+        />
       </div>
     </UContainer>
   </div>
@@ -27,7 +52,32 @@
 <script
   setup
   lang="ts"
-></script>
+>
+// Trimming & pruning page using shared service components
+interface FaqItem { label: string; content: string }
+const faqItems: FaqItem[] = [
+  {
+    label: 'How often should I trim my trees?',
+    content: 'Most mature trees benefit from trimming every 2–3 years; fast growers or hazard-prone species may need more frequent attention.'
+  },
+  {
+    label: 'Is pruning safe for the tree?',
+    content: 'Yes—when done correctly. We follow industry best practices (ANSI A300) to protect tree health.'
+  },
+  {
+    label: 'Do you haul away branches?',
+    content: 'All debris is chipped and hauled unless you request mulch left onsite.'
+  },
+  {
+    label: 'Can trimming help with storm prevention?',
+    content: 'Proper structural pruning reduces weak branch unions and canopy wind load.'
+  },
+  {
+    label: 'Do you offer emergency service?',
+    content: 'Yes, we handle storm damage and hazardous limb removal as priority calls.'
+  }
+]
+</script>
 
 <style scoped>
 .bg-black\/40 {

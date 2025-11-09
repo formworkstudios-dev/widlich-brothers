@@ -16,9 +16,33 @@
     </div>
     <UContainer class="flex-1 flex justify-center">
       <div class="w-full max-w-2xl mx-auto">
-        <p class="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-          consectetur cursus, nisl erat dictum urna, nec dictum enim enim nec enim. Etiam euismod, enim nec dictum
-          dictum, enim enim dictum enim, nec dictum enim enim nec enim.</p>
+        <ServiceIntro
+          service-name="Land Clearing"
+          description="Comprehensive land and lot clearing for construction prep, view restoration, and property expansion. Efficient debris handling and selective removal."
+        />
+        <ServiceDetails
+          service-name="Land Clearing"
+          :details="[
+            'Selective tree and brush removal',
+            'Debris chipping and hauling',
+            'Stump grinding options',
+            'Erosion-conscious clean-up'
+          ]"
+        />
+        <ServiceArea
+          service-name="Land Clearing"
+          description="Serving residential lots, commercial sites, and rural acreage throughout Northeast PA including Pittston, Scranton, and the Poconos."
+        />
+        <div class="mt-10">
+          <ServiceFAQ
+            title="Land Clearing FAQs"
+            :items="faqItems"
+          />
+        </div>
+        <ServiceOtherServices
+          class="mt-12"
+          self="land-clearing"
+        />
       </div>
     </UContainer>
   </div>
@@ -27,7 +51,32 @@
 <script
   setup
   lang="ts"
-></script>
+>
+// Land clearing page composed of shared service components
+interface FaqItem { label: string; content: string }
+const faqItems: FaqItem[] = [
+  {
+    label: 'Do you clear lots for new construction?',
+    content: 'Yes. We prepare residential and commercial lots by removing trees, brush, and grinding stumps.'
+  },
+  {
+    label: 'Can you do selective clearing?',
+    content: 'Absolutely. We can preserve desirable trees while removing overgrowth and unwanted vegetation.'
+  },
+  {
+    label: 'What happens to the debris?',
+    content: 'Brush is chipped, logs can be hauled or left per your request, and the site is raked clean.'
+  },
+  {
+    label: 'Do you handle erosion concerns?',
+    content: 'We avoid unnecessary disturbance and can leave ground cover or chips to help stabilize exposed soil.'
+  },
+  {
+    label: 'Is stump grinding included?',
+    content: 'It can be added. We offer grinding for all stumps created during clearing.'
+  }
+]
+</script>
 
 <style scoped>
 .bg-black\/40 {

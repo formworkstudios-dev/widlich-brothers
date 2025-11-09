@@ -112,7 +112,7 @@ watch(() => route.path, () => {
         >Contact</NuxtLink>
         <div class="relative dropdown">
           <button
-            class="nav-link font-semibold flex items-center gap-1"
+            class="nav-link flex items-center gap-1"
             type="button"
             @click="toggleServices"
           >
@@ -145,7 +145,7 @@ watch(() => route.path, () => {
         </div>
         <div class="relative dropdown">
           <button
-            class="nav-link font-semibold flex items-center gap-1"
+            class="nav-link flex items-center gap-1"
             type="button"
             @click="toggleLocations"
           >
@@ -179,9 +179,9 @@ watch(() => route.path, () => {
         <!-- <NuxtLink to="/posts" class="nav-link">Blog</NuxtLink> -->
         <UButton
           size="xl"
-          color="primary"
-          :class="useLightText ? 'ml-4 text-white' : 'ml-4 text-amber-950 bg-green-600'"
+          class="ml-4 bg-green-700 hover:bg-green-800 active:bg-green-900 text-white border-0 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-transparent transition-colors"
           to="tel:+15707033963"
+          aria-label="Call 570-703-3963"
         >Call Now</UButton>
       </div>
       <button
@@ -207,9 +207,9 @@ watch(() => route.path, () => {
         <div class="flex flex-col gap-8 items-center mt-8">
           <UButton
             size="xl"
-            color="primary"
-            class="mb-4"
+            class="mb-4 bg-green-700 hover:bg-green-800 active:bg-green-900 text-white border-0 shadow-sm w-11/12 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-transparent transition-colors"
             to="tel:+15707033963"
+            aria-label="Call 570-703-3963"
           >Call Now</UButton>
           <NuxtLink
             to="/"

@@ -16,8 +16,33 @@
     </div>
     <UContainer class="flex-1 flex justify-center">
       <div class="w-full max-w-2xl mx-auto">
-        <p class="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-          consectetur cursus, nisl erat dictum urna, nec dictum enim enim nec enim.</p>
+        <ServiceIntro
+          service-name="Stump Grinding"
+          description="Precision stump grinding to remove hazards, improve curb appeal, and prepare ground for replanting or landscaping upgrades."
+        />
+        <ServiceDetails
+          service-name="Stump Grinding"
+          :details="[
+            'Depth grinding below grade',
+            'Surface root mitigation',
+            'Clean-up and optional backfill',
+            'Multiple stump discounts'
+          ]"
+        />
+        <ServiceArea
+          service-name="Stump Grinding"
+          description="Available across NEPA: Pittston, Scranton, Poconos and surrounding areas. Contact us for rural property availability."
+        />
+        <div class="mt-10">
+          <ServiceFAQ
+            title="Stump Grinding FAQs"
+            :items="faqItems"
+          />
+        </div>
+        <ServiceOtherServices
+          class="mt-12"
+          self="stump-grinding"
+        />
       </div>
     </UContainer>
   </div>
@@ -26,7 +51,32 @@
 <script
   setup
   lang="ts"
-></script>
+>
+// Stump grinding page using shared service components
+interface FaqItem { label: string; content: string }
+const faqItems: FaqItem[] = [
+  {
+    label: 'How deep do you grind the stump?',
+    content: 'We typically grind 6–12 inches below grade depending on replanting or surface needs.'
+  },
+  {
+    label: 'What about surface roots?',
+    content: 'We can grind visible surface roots in the work area upon request.'
+  },
+  {
+    label: 'Do you remove the chips?',
+    content: 'Chips can be left to backfill or hauled away—your preference.'
+  },
+  {
+    label: 'Can I replant after grinding?',
+    content: 'Yes. After removing chips and adding soil, the area can be replanted or seeded.'
+  },
+  {
+    label: 'Is there a discount for multiple stumps?',
+    content: 'Yes, we offer competitive pricing for multiple stumps at the same site.'
+  }
+]
+</script>
 
 <style scoped>
 .bg-black\/40 {
