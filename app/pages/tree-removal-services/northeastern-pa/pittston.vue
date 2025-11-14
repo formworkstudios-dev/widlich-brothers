@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full min-h-screen flex flex-col">
-    <div class="relative w-full h-72 md:h-96 flex items-center justify-center mb-8 overflow-hidden">
+    <div class="relative w-full h-72 md:h-96 flex items-center justify-center overflow-hidden">
       <NuxtImg
         src="/tree-trunk-hero-weidlich-brothers.webp"
         alt="Weidlich Brothers Tree Care Hero"
@@ -15,13 +15,31 @@
           Pittston</h1>
       </div>
     </div>
-    <UContainer class="flex-1 flex justify-center">
+    <SharedWrapper show-cta>
       <div class="w-full max-w-2xl mx-auto">
-        <p class="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-          consectetur cursus, nisl erat dictum urna, nec dictum enim enim nec enim. Etiam euismod, enim nec dictum
-          dictum, enim enim dictum enim, nec dictum enim enim nec enim.</p>
+        <LocationsIntro
+          service-name="Tree Removal Services in Pittston, PA"
+          description="Professional tree care serving Pittston and the Greater Pittston area. From residential tree removal to commercial land clearing, we provide expert tree services with a focus on safety and customer satisfaction."
+        />
+        <LocationsDetails
+          service-name="Tree Services in Pittston"
+          :details="[
+            'Residential and commercial tree removal',
+            'Tree trimming and pruning',
+            'Stump grinding services',
+            'Emergency tree removal',
+            'Land clearing for construction',
+            'Storm damage cleanup',
+            'Free estimates and consultations'
+          ]"
+        />
+        <LocationsCustom header="Serving Pittston with Professional Tree Care">
+          <p class="text-lg leading-relaxed">
+            Add your custom content here for Pittston.
+          </p>
+        </LocationsCustom>
       </div>
-    </UContainer>
+    </SharedWrapper>
   </div>
 </template>
 

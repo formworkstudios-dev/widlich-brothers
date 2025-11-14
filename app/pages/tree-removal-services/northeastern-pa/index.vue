@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full min-h-screen flex flex-col">
-    <div class="relative w-full h-72 md:h-96 flex items-center justify-center mb-8 overflow-hidden">
+    <div class="relative w-full h-72 md:h-96 flex items-center justify-center overflow-hidden">
       <NuxtImg
         src="/tree-trunk-hero-weidlich-brothers.webp"
         alt="Weidlich Brothers Tree Care Hero"
@@ -15,13 +15,31 @@
           Northeastern PA</h1>
       </div>
     </div>
-    <UContainer class="flex-1 flex justify-center">
+    <SharedWrapper>
       <div class="w-full max-w-2xl mx-auto">
-        <p class="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-          consectetur cursus, nisl erat dictum urna, nec dictum enim enim nec enim. Etiam euismod, enim nec dictum
-          dictum, enim enim dictum enim, nec dictum enim enim nec enim.</p>
+        <LocationsIntro
+          service-name="Professional Tree Care in Northeastern PA"
+          description="Expert tree removal, trimming, stump grinding, and land clearing services throughout Northeastern Pennsylvania. Serving Scranton, Pittston, the Poconos, and surrounding areas with professional, insured tree care."
+        />
+        <LocationsDetails
+          service-name="Our Tree Services"
+          :details="[
+            'Complete tree removal and cutting',
+            'Professional tree trimming and pruning',
+            'Stump grinding and removal',
+            'Land and lot clearing',
+            'Emergency storm damage response',
+            'Crane-assisted tree removal',
+            'Fully insured and experienced crews'
+          ]"
+        />
+        <LocationsCustom header="Why Choose Weidlich Brothers">
+          <p class="text-lg leading-relaxed">
+            Add your custom content here for Northeastern PA.
+          </p>
+        </LocationsCustom>
       </div>
-    </UContainer>
+    </SharedWrapper>
   </div>
 </template>
 

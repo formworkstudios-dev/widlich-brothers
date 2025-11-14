@@ -22,7 +22,8 @@ const props = withDefaults(defineProps<Props>(), {
         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-amber-900 dark:text-white">Ready for Expert {{
           props.serviceName }}?</h2>
         <p class="text-base md:text-lg mb-6 text-gray-700 dark:text-gray-200">
-          Contact Weidlich Brothers today for a free estimate on {{ props.serviceName }}. Our team is fully insured and
+          Contact Weidlich Brothers today for an estimate on {{ props.serviceName }} services. Our team is fully insured
+          and
           ready to help across Northeast PA.
         </p>
         <UButton

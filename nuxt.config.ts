@@ -14,6 +14,14 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "nuxt-resend",
   ],
+
+  colorMode: {
+    preference: "light",
+  },
+  ui: {
+    colorMode: false,
+  },
+
   site: {
     url: "https://weidlichbrotherstreecare.com",
     name: "Weidlich Brothers Tree Care",

@@ -35,7 +35,7 @@ const faqItems = [
 </script>
 
 <template>
-  <UContainer class="flex justify-center">
+  <UContainer class="flex justify-center accordion">
     <UCard
       class="max-w-2xl w-full rounded-none bg-transparent border border-amber-200 dark:border-amber-800 bg-amber-50"
     >

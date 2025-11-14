@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full min-h-screen flex flex-col">
-    <div class="relative w-full h-72 md:h-96 flex items-center justify-center mb-8 overflow-hidden">
+    <div class="relative w-full h-72 md:h-96 flex items-center justify-center overflow-hidden">
       <NuxtImg
         src="/tree-trunk-hero-weidlich-brothers.webp"
         alt="Weidlich Brothers Tree Care Hero"
@@ -14,7 +14,10 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg text-center">Stump Grinding</h1>
       </div>
     </div>
-    <UContainer class="flex-1 flex justify-center">
+    <SharedWrapper
+      show-cta
+      service-name="Stump Grinding"
+    >
       <div class="w-full max-w-2xl mx-auto">
         <ServiceIntro
           service-name="Stump Grinding"
@@ -44,7 +47,7 @@
           self="stump-grinding"
         />
       </div>
-    </UContainer>
+    </SharedWrapper>
   </div>
 </template>
 

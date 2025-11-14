@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full min-h-screen flex flex-col">
-    <div class="relative w-full h-72 md:h-96 flex items-center justify-center mb-8 overflow-hidden">
+    <div class="relative w-full h-72 md:h-96 flex items-center justify-center overflow-hidden">
       <NuxtImg
         src="/tree-trunk-hero-weidlich-brothers.webp"
         alt="Weidlich Brothers Tree Care Hero"
@@ -15,13 +15,31 @@
           the Poconos</h1>
       </div>
     </div>
-    <UContainer class="flex-1 flex justify-center">
+    <SharedWrapper>
       <div class="w-full max-w-2xl mx-auto">
-        <p class="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-          consectetur cursus, nisl erat dictum urna, nec dictum enim enim nec enim. Etiam euismod, enim nec dictum
-          dictum, enim enim dictum enim, nec dictum enim enim nec enim.</p>
+        <LocationsIntro
+          service-name="Tree Removal Services in the Poconos"
+          description="Expert tree care for the Pocono Mountains region. We understand the unique challenges of mountain properties and provide professional tree removal, trimming, and land management services for residential and commercial clients."
+        />
+        <LocationsDetails
+          service-name="Tree Services in the Poconos"
+          :details="[
+            'Mountain property tree removal',
+            'Scenic view restoration and trimming',
+            'Stump grinding on challenging terrain',
+            'Land clearing for development',
+            'Storm and ice damage removal',
+            'Access road and driveway clearing',
+            'Experience with mountain properties'
+          ]"
+        />
+        <LocationsCustom header="Pocono Mountain Tree Specialists">
+          <p class="text-lg leading-relaxed">
+            Add your custom content here for the Poconos.
+          </p>
+        </LocationsCustom>
       </div>
-    </UContainer>
+    </SharedWrapper>
   </div>
 </template>
 

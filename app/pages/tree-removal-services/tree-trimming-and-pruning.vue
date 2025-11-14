@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full min-h-screen flex flex-col">
-    <div class="relative w-full h-72 md:h-96 flex items-center justify-center mb-8 overflow-hidden">
+    <div class="relative w-full h-72 md:h-96 flex items-center justify-center overflow-hidden">
       <NuxtImg
         src="/tree-trunk-hero-weidlich-brothers.webp"
         alt="Weidlich Brothers Tree Care Hero"
@@ -15,7 +15,10 @@
         </h1>
       </div>
     </div>
-    <UContainer class="flex-1 flex justify-center">
+    <SharedWrapper
+      show-cta
+      service-name="Tree Trimming & Pruning"
+    >
       <div class="w-full max-w-2xl mx-auto">
         <ServiceIntro
           service-name="Tree Trimming & Pruning"
@@ -45,7 +48,7 @@
           self="trimming-pruning"
         />
       </div>
-    </UContainer>
+    </SharedWrapper>
   </div>
 </template>
 

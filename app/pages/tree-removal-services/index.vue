@@ -14,7 +14,10 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg text-center">Tree Removal Services</h1>
       </div>
     </div>
-    <SharedWrapper show-cta>
+    <SharedWrapper
+      show-cta
+      service-name="Tree Removal"
+    >
       <div class="w-full max-w-2xl mx-auto">
         <ServiceIntro
           service-name="Tree Removal Services"
@@ -53,6 +56,10 @@
   lang="ts"
 >
 // Using Service components with props
+definePageMeta({
+  title: 'Tree Removal Services'
+})
+
 interface FaqItem { label: string; content: string }
 const faqItems: FaqItem[] = [
   {

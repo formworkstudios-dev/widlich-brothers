@@ -15,13 +15,31 @@
           Scranton</h1>
       </div>
     </div>
-    <UContainer class="flex-1 flex justify-center">
+    <SharedWrapper show-cta>
       <div class="w-full max-w-2xl mx-auto">
-        <p class="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-          consectetur cursus, nisl erat dictum urna, nec dictum enim enim nec enim. Etiam euismod, enim nec dictum
-          dictum, enim enim dictum enim, nec dictum enim enim nec enim.</p>
+        <LocationsIntro
+          service-name="Tree Removal Services in Scranton, PA"
+          description="Trusted tree care professionals serving Scranton and the surrounding communities. We specialize in safe tree removal, expert trimming, and complete property cleanup for homes and businesses throughout the Scranton area."
+        />
+        <LocationsDetails
+          service-name="Tree Services in Scranton"
+          :details="[
+            'Safe tree removal for any size tree',
+            'Professional trimming and pruning',
+            'Complete stump grinding',
+            '24/7 emergency tree services',
+            'Lot clearing and site preparation',
+            'Debris removal and cleanup',
+            'Fully licensed and insured'
+          ]"
+        />
+        <LocationsCustom header="Expert Tree Care for Scranton">
+          <p class="text-lg leading-relaxed">
+            Add your custom content here for Scranton.
+          </p>
+        </LocationsCustom>
       </div>
-    </UContainer>
+    </SharedWrapper>
   </div>
 </template>
 

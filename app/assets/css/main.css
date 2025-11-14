@@ -61,3 +61,12 @@ p {
   line-height: theme(lineHeight.relaxed);
   font-weight: theme(fontWeight.normal);
 }
+
+.accordion h1,
+.accordion h2,
+.accordion h3,
+.accordion h4,
+.accordion h5,
+.accordion h6 {
+  margin-bottom: 0;
+}

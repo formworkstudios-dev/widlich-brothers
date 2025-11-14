@@ -1,13 +1,3 @@
-<script
-  setup
-  lang="ts"
->
-const colorMode = useColorMode()
-function toggleColorMode() {
-  colorMode.value = colorMode.value === 'dark' ? 'light' : 'dark'
-}
-</script>
-
 <template>
   <footer
     class="border-t w-full bg-amber-100/30 border-amber-200 text-amber-800 dark:bg-amber-950/30 dark:border-amber-950 dark:text-amber-200"
@@ -91,17 +81,6 @@ function toggleColorMode() {
         <div class="text-xs dark:text-amber-100">&copy; {{ new Date().getFullYear() }} Weidlich Brothers Tree Care. All
           rights reserved.
         </div>
-        <button
-          @click="toggleColorMode"
-          class="flex items-center gap-2 px-3 py-1 rounded-none bg-amber-100 dark:bg-amber-900 border border-amber-200 dark:border-amber-800 hover:bg-amber-300 dark:hover:bg-amber-800 transition-colors text-xs cursor-pointer"
-          style="font-size: 0.85rem;"
-        >
-          <UIcon
-            :name="colorMode.value === 'dark' ? 'i-mdi-weather-night' : 'i-mdi-white-balance-sunny'"
-            class="text-base text-amber-800 dark:text-amber-100"
-          />
-          <span class="dark:text-amber-100">{{ colorMode.value === 'dark' ? 'Dark' : 'Light' }} Mode</span>
-        </button>
       </div>
     </div>
   </footer>
