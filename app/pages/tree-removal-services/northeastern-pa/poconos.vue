@@ -16,7 +16,7 @@
       </div>
     </div>
     <SharedWrapper>
-      <div class="w-full max-w-2xl mx-auto">
+      <div class="w-full max-w-3xl mx-auto">
         <LocationsIntro
           service-name="Tree Removal Services in the Poconos"
           description="Expert tree care for the Pocono Mountains region. We understand the unique challenges of mountain properties and provide professional tree removal, trimming, and land management services for residential and commercial clients."
@@ -34,9 +34,40 @@
           ]"
         />
         <LocationsCustom header="Pocono Mountain Tree Specialists">
-          <p class="text-lg leading-relaxed">
-            Add your custom content here for the Poconos.
-          </p>
+
+          <section class="space-y-4">
+
+            <p>
+              Mountain forests in the Poconos are dominated by hemlock, oak, maple, and pine—
+              beautiful trees, but often vulnerable to wind damage, heavy snow, invasive pests,
+              and shallow rocky soil. Homeowners in the region frequently deal with leaning
+              trees, branches threatening rooftops, overcrowded woodlots, and blocked scenic
+              views. Our team provides careful assessment and safe removal designed specifically
+              for mountain environments.
+            </p>
+
+            <p>
+              Many Pocono properties sit on steep grades or uneven terrain, making proper tree
+              cutting essential for protecting structures, driveways, and neighboring lots.
+              Whether you need hazardous trees removed before winter storms, dead pines taken
+              down due to beetle infestation, or selective trimming to improve sunlight and
+              airflow, we deliver precise work tailored to your landscape.
+            </p>
+
+            <p>
+              We understand the challenges of maintaining forested mountain homes: fallen limbs
+              after ice storms, root systems shifting in rocky ground, and tall trees growing
+              too close to cabins or power lines. Our equipment and techniques are designed for
+              tight, hard-to-reach areas without damaging the surrounding property.
+            </p>
+
+            <p>
+              From full-scale clearance to routine health trimming, we help landowners keep
+              their Pocono properties safe, clean, and visually open—while preserving the
+              natural beauty of the mountains.
+            </p>
+          </section>
+
         </LocationsCustom>
       </div>
     </SharedWrapper>

@@ -26,7 +26,7 @@
             :height="320"
           />
         </div>
-        <h2 class="text-2xl font-bold mb-4">Our Story</h2>
+        <h2 class="text-2xl font-bold mb-4 text-amber-900">Our Story</h2>
         <p class="text-lg mb-4">
           Weidlich Brothers Tree Care is a family-owned business serving Pittston, Olyphant, and the surrounding areas
           since 1995. We specialize in safe, professional tree removal, trimming, and care for your property.

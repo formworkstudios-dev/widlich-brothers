@@ -53,7 +53,7 @@ const wrapperStyle = computed(() => {
     <UContainer
       v-if="props.useContainer"
       :class="props.containerClass"
-      class="max-w-2xl mx-auto"
+      class="max-w-3xl mx-auto"
     >
       <slot />
       <ServiceCTA :service-name="props.serviceName" />

@@ -81,7 +81,7 @@ function onError(e: FormErrorEvent) {
     </div>
     <UContainer class="pt-8 pb-16 max-w-3xl flex-1 flex justify-center ">
       <div class="w-full max-w-2xl mx-auto">
-        <h2 class="text-2xl font-bold mb-4">Get In Touch</h2>
+        <h2 class="text-2xl font-bold mb-4 text-amber-900">Get In Touch</h2>
         <p class="text-lg mb-4">
           For questions, quotes, or to schedule service, call us at <a
             href="tel:+15707033963"

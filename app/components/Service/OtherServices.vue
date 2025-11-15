@@ -45,7 +45,7 @@ const otherServices = computed(() => allServices.filter(s => s.alias !== props.s
 
 <template>
   <section class="mt-12">
-    <h3 class="text-2xl font-semibold mb-6 text-amber-900 dark:text-amber-100">Other Services</h3>
+    <h3 class="text-2xl font-semibold !mb-6 text-amber-900 dark:text-amber-100">Other Services</h3>
     <ul class="space-y-5">
       <li
         v-for="svc in otherServices"
@@ -58,7 +58,7 @@ const otherServices = computed(() => allServices.filter(s => s.alias !== props.s
         >
           {{ svc.name }}
         </NuxtLink>
-        <p class="mt-1 text-sm md:text-base text-amber-900/85 dark:text-amber-100/90 leading-relaxed">{{ svc.description
+        <p class="mt-1 text-sm md:text-base dark:text-amber-100/90 leading-relaxed">{{ svc.description
           }}</p>
       </li>
     </ul>

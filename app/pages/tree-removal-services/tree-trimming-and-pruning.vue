@@ -19,7 +19,7 @@
       show-cta
       service-name="Tree Trimming & Pruning"
     >
-      <div class="w-full max-w-2xl mx-auto">
+      <div class="w-full max-w-3xl mx-auto">
         <ServiceIntro
           service-name="Tree Trimming & Pruning"
           description="Health-focused trimming and structural pruning to improve safety, shape, sunlight penetration, and long-term tree vitality."

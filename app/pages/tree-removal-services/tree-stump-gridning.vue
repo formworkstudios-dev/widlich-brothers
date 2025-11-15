@@ -18,7 +18,7 @@
       show-cta
       service-name="Stump Grinding"
     >
-      <div class="w-full max-w-2xl mx-auto">
+      <div class="w-full max-w-3xl mx-auto">
         <ServiceIntro
           service-name="Stump Grinding"
           description="Precision stump grinding to remove hazards, improve curb appeal, and prepare ground for replanting or landscaping upgrades."

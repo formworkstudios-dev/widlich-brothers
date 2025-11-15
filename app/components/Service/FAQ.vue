@@ -19,9 +19,9 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="flex justify-center accordion">
+  <div class="flex justify-center accordion w-full">
     <UCard
-      class="max-w-2xl w-full rounded-none bg-transparent border border-amber-200 dark:border-amber-800"
+      class="w-full rounded-none bg-transparent border border-amber-200 dark:border-amber-800"
       :ui="{
         root: 'overflow-hidden bg-amber-50 dark:bg-amber-950',
         header: 'p-0 bg-amber-100 dark:bg-amber-900 border-b border-amber-200 dark:border-amber-800',

@@ -16,7 +16,7 @@
       </div>
     </div>
     <SharedWrapper show-cta>
-      <div class="w-full max-w-2xl mx-auto">
+      <div class="w-full max-w-3xl mx-auto">
         <LocationsIntro
           service-name="Tree Removal Services in Pittston, PA"
           description="Professional tree care serving Pittston and the Greater Pittston area. From residential tree removal to commercial land clearing, we provide expert tree services with a focus on safety and customer satisfaction."
@@ -34,9 +34,32 @@
           ]"
         />
         <LocationsCustom header="Serving Pittston with Professional Tree Care">
-          <p class="text-lg leading-relaxed">
-            Add your custom content here for Pittston.
-          </p>
+          <section class="space-y-4">
+            <p>
+              Pittston is a city with a mix of older homes, city streets, and small green spaces, where trees add
+              charm but can create hazards if not properly maintained. Homeowners often face overgrown yards,
+              branches near rooftops, and trees competing for sunlight in close lots. Our team provides careful
+              assessment and safe removal designed for Pittston’s urban and suburban environment.
+            </p>
+
+            <p>
+              Many Pittston properties have mature trees near buildings, fences, and utility lines. Proper tree
+              cutting is essential to prevent storm damage, remove dead or diseased trees, and enhance the
+              health and appearance of your landscape. We handle everything from hazardous removals to precise pruning.
+            </p>
+
+            <p>
+              We understand the unique challenges of city and small-town landscapes: roots affecting sidewalks,
+              branches overhanging streets or homes, and trees in tight spaces. Our equipment and techniques
+              allow us to work safely and efficiently without disrupting your property or neighbors.
+            </p>
+
+            <p>
+              From full-scale removal to routine trimming, we help Pittston homeowners keep their properties
+              safe, accessible, and visually appealing—while maintaining the beauty of the local urban landscape.
+            </p>
+          </section>
+
         </LocationsCustom>
       </div>
     </SharedWrapper>

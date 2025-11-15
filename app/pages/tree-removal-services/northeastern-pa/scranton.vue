@@ -16,7 +16,7 @@
       </div>
     </div>
     <SharedWrapper show-cta>
-      <div class="w-full max-w-2xl mx-auto">
+      <div class="w-full max-w-3xl mx-auto">
         <LocationsIntro
           service-name="Tree Removal Services in Scranton, PA"
           description="Trusted tree care professionals serving Scranton and the surrounding communities. We specialize in safe tree removal, expert trimming, and complete property cleanup for homes and businesses throughout the Scranton area."
@@ -34,9 +34,35 @@
           ]"
         />
         <LocationsCustom header="Expert Tree Care for Scranton">
-          <p class="text-lg leading-relaxed">
-            Add your custom content here for Scranton.
-          </p>
+          <section class="space-y-4">
+            <p>
+              Scranton neighborhoods feature a mix of historic homes, city streets, and small wooded areas—
+              lovely greenery, but often interspersed with tight yards, aging trees, and limited space for equipment.
+              Homeowners in the city face challenges like overgrown trees near sidewalks, branches encroaching on roofs,
+              and trees competing for sunlight in closely packed lots. Our team provides careful assessment and safe
+              removal tailored to urban and suburban settings.
+            </p>
+
+            <p>
+              Many properties in Scranton are older, with established trees near structures, fences, and power lines.
+              Proper tree cutting is essential to prevent damage during storms, manage dead or diseased trees, and
+              improve sunlight and airflow for yards and gardens. We handle everything from hazardous tree removal
+              to pruning for safety and aesthetics.
+            </p>
+
+            <p>
+              We understand the demands of maintaining city and suburban landscapes: roots disrupting sidewalks,
+              large branches overhanging streets or homes, and trees growing too close to buildings or utility lines.
+              Our equipment and techniques are designed for tight spaces and minimal disruption to your property and
+              neighbors.
+            </p>
+
+            <p>
+              From complete removal to regular trimming, we help Scranton homeowners keep their properties safe,
+              accessible, and visually appealing—while enhancing the natural beauty of the urban landscape.
+            </p>
+          </section>
+
         </LocationsCustom>
       </div>
     </SharedWrapper>

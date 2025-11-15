@@ -21,7 +21,7 @@ const props = withDefaults(defineProps<Props>(), {
         class="text-sm"
       />
     </span>
-    <span class="text-amber-900 dark:text-amber-100">{{ props.label }}</span>
+    <span class=" dark:text-amber-100">{{ props.label }}</span>
   </li>
 
 </template>

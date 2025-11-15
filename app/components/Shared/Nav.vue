@@ -205,70 +205,74 @@ watch(() => route.path, () => {
           aria-label="Close menu"
         >✕</button>
         <div class="flex flex-col gap-8 items-center mt-8">
-          <UButton
-            size="xl"
-            class="mb-4 bg-green-700 hover:bg-green-800 active:bg-green-900 text-white border-0 shadow-sm w-11/12 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-transparent transition-colors"
-            to="tel:+15707033963"
-            aria-label="Call 570-703-3963"
-          >Call Now</UButton>
+
           <NuxtLink
             to="/"
+            class="text-stone-900"
             @click="toggleMenu"
           >Home</NuxtLink>
           <NuxtLink
             to="/about"
             @click="toggleMenu"
+            class="text-stone-900"
           >About</NuxtLink>
           <NuxtLink
             to="/contact"
+            class="text-stone-900"
             @click="toggleMenu"
           >Contact</NuxtLink>
           <div class="w-full">
-            <div class=" mb-2">Services</div>
+            <div class="mb-2 text-stone-900 mx-auto w-full text-center">Services</div>
             <NuxtLink
               to="/tree-removal-services"
               @click="toggleMenu"
-              class="block px-4 py-2"
+              class="block px-4 py-2 text-center text-stone-900"
             >Tree Removal Services</NuxtLink>
             <NuxtLink
               to="/tree-removal-services/tree-stump-gridning"
               @click="toggleMenu"
-              class="block px-4 py-2"
+              class="block px-4 py-2 text-center text-stone-900"
             >Stump Grinding</NuxtLink>
             <NuxtLink
               to="/tree-removal-services/tree-trimming-and-pruning"
               @click="toggleMenu"
-              class="block px-4 py-2"
+              class="block px-4 py-2 text-center text-stone-900"
             >Trimming & Pruning</NuxtLink>
             <NuxtLink
               to="/tree-removal-services/land-clearing"
               @click="toggleMenu"
-              class="block px-4 py-2"
+              class="block px-4 py-2 text-center text-stone-900"
             >Land Clearing</NuxtLink>
           </div>
           <div class="w-full mt-4">
-            <div class="mb-2">Locations</div>
+            <div class="mb-2 text-stone-900 mx-auto w-full text-center">Locations</div>
             <NuxtLink
               to="/tree-removal-services/northeastern-pa"
               @click="toggleMenu"
-              class="block px-4 py-2"
+              class="block px-4 py-2 text-center text-stone-900"
             >Northeastern PA</NuxtLink>
             <NuxtLink
               to="/tree-removal-services/northeastern-pa/pittston"
               @click="toggleMenu"
-              class="block px-4 py-2"
+              class="block px-4 py-2 text-center text-stone-900"
             >Pittston</NuxtLink>
             <NuxtLink
               to="/tree-removal-services/northeastern-pa/scranton"
               @click="toggleMenu"
-              class="block px-4 py-2"
+              class="block px-4 py-2 text-center text-stone-900"
             >Scranton</NuxtLink>
             <NuxtLink
               to="/tree-removal-services/northeastern-pa/poconos"
               @click="toggleMenu"
-              class="block px-4 py-2"
+              class="block px-4 py-2 text-center text-stone-900"
             >Poconos</NuxtLink>
           </div>
+          <UButton
+            size="xl"
+            class="mt-auto mb-4 bg-green-700 text-center hover:bg-green-800 active:bg-green-900 text-white border-0 shadow-sm w-11/12 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-transparent transition-colors"
+            to="tel:+15707033963"
+            aria-label="Call 570-703-3963"
+          ><span class="w-full text-center">Call Now</span></UButton>
         </div>
       </div>
     </transition>

@@ -18,7 +18,7 @@
       show-cta
       service-name="Tree Removal"
     >
-      <div class="w-full max-w-2xl mx-auto">
+      <div class="w-full max-w-3xl mx-auto">
         <ServiceIntro
           service-name="Tree Removal Services"
           description="Professional tree removal, trimming, and emergency care across Northeastern PA. Fully insured, safety-first crews, and clean job sites."

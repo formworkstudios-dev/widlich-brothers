@@ -18,7 +18,7 @@
       show-cta
       service-name="Land Clearing"
     >
-      <div class="w-full max-w-2xl mx-auto">
+      <div class="w-full max-w-3xl mx-auto">
         <ServiceIntro
           service-name="Land Clearing"
           description="Comprehensive land and lot clearing for construction prep, view restoration, and property expansion. Efficient debris handling and selective removal."
