@@ -44,22 +44,28 @@ const otherServices = computed(() => allServices.filter(s => s.alias !== props.s
 </script>
 
 <template>
-  <section class="mt-12">
-    <h3 class="text-2xl font-semibold !mb-6 text-amber-900 dark:text-amber-100">Other Services</h3>
-    <ul class="space-y-5">
+  <section class="mt-12 mb-6">
+    <h3 class="text-2xl font-semibold !mb-6 text-amber-900 dark:text-amber-100">Other Services We Offer</h3>
+    <ul class="space-y-6">
       <li
         v-for="svc in otherServices"
         :key="svc.alias"
         class="flex flex-col"
       >
+        <h4 class="text-amber-900 dark:text-amber-100 text-base md:text-lg font-semibold">
+          {{ svc.name }}
+        </h4>
+        <p class="mt-1 text-sm md:text-base dark:text-amber-100/90 leading-relaxed">{{ svc.description }}</p>
         <NuxtLink
           :to="svc.path"
-          class="text-amber-800 dark:text-amber-200 text-base md:text-lg font-semibold hover:underline"
+          class="mt-2 inline-flex items-center gap-2 text-amber-800 dark:text-amber-200 text-sm font-medium hover:underline group w-fit"
         >
-          {{ svc.name }}
+          <span>Learn more</span>
+          <UIcon
+            name="i-mdi-chevron-double-right"
+            class="transition-transform duration-300 group-hover:translate-x-1"
+          />
         </NuxtLink>
-        <p class="mt-1 text-sm md:text-base dark:text-amber-100/90 leading-relaxed">{{ svc.description
-          }}</p>
       </li>
     </ul>
   </section>

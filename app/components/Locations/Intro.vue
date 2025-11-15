@@ -17,10 +17,10 @@ const props = defineProps<Props>()
       to="tel:+15707033963"
       size="md"
       color="primary"
-      class="mt-6 font-semibold"
+      class="mt-4 font-semibold w-full md:w-auto"
       aria-label="Call 570-703-3963"
     >
-      <span class="w-full">Call 570-703-3963</span>
+      <span class="w-full text-center">Call Now 570-703-3963</span>
     </UButton>
   </section>
 </template>

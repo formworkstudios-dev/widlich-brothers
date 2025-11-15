@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full min-h-screen flex flex-col">
-    <div class="relative w-full h-72 md:h-96 flex items-center justify-center mb-8 overflow-hidden">
+    <div class="relative w-full h-72 md:h-96 flex items-center justify-center overflow-hidden">
       <NuxtImg
         src="/tree-trunk-hero-weidlich-brothers.webp"
         alt="Weidlich Brothers Tree Care Hero"
@@ -72,7 +72,15 @@
 <script
   setup
   lang="ts"
-></script>
+>
+import { definePageMeta } from '#imports'
+
+// Note: does not work for dynamic pages, only accepts strings
+definePageMeta({
+  title: 'Tree Removal Service in Scranton, PA'
+})
+
+</script>
 
 <style scoped>
 .bg-black\/40 {

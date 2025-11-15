@@ -3,6 +3,13 @@
   lang="ts"
 >
 import { NuxtImg } from '#components'
+
+function scrollToServices() {
+  const servicesSection = document.getElementById('services')
+  if (servicesSection) {
+    servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
 </script>
 
 <template>
@@ -38,7 +45,10 @@ import { NuxtImg } from '#components'
           size="xl"
           class="gap-4 text-white mt-2 flex-col md:flex-row w-full mx-auto items-center justify-center"
         >
-          <UButton class="text-white w-full md:w-auto border border-opacity-50">
+          <UButton
+            class="text-white w-full md:w-auto border border-opacity-50"
+            @click="scrollToServices"
+          >
             <span class="w-full text-center block">Our Services</span>
           </UButton>
           <UButton

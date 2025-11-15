@@ -70,7 +70,15 @@
 <script
   setup
   lang="ts"
-></script>
+>
+import { definePageMeta } from '#imports'
+
+// Note: does not work for dynamic pages, only accepts strings
+definePageMeta({
+  title: 'Tree Removal Service in NEPA'
+})
+
+</script>
 
 <style scoped>
 .bg-black\/40 {

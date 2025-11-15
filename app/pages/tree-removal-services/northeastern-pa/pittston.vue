@@ -35,7 +35,7 @@
         />
         <LocationsCustom header="Serving Pittston with Professional Tree Care">
           <section class="space-y-4">
-            <p>
+            <p class="leading-relaxed">
               Pittston is a city with a mix of older homes, city streets, and small green spaces, where trees add
               charm but can create hazards if not properly maintained. Homeowners often face overgrown yards,
               branches near rooftops, and trees competing for sunlight in close lots. Our team provides careful
@@ -69,7 +69,15 @@
 <script
   setup
   lang="ts"
-></script>
+>
+import { definePageMeta } from '#imports'
+
+// Note: does not work for dynamic pages, only accepts strings
+definePageMeta({
+  title: 'Tree Removal Service in Pittston, PA'
+})
+
+</script>
 
 <style scoped>
 .bg-black\/40 {

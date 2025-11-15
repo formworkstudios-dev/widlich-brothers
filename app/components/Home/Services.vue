@@ -51,7 +51,10 @@ const services = [
 </script>
 
 <template>
-  <div class=" bg-amber-50/10 dark:bg-amber-950 dark:border-amber-900">
+  <div
+    id="services"
+    class=" bg-amber-50/10 dark:bg-amber-950 dark:border-amber-900"
+  >
     <UContainer>
       <div>
         <h2 class="text-3xl font-bold text-center text-amber-900 dark:text-amber-100">Our Services</h2>
@@ -65,7 +68,7 @@ const services = [
             <NuxtImg
               :src="service.image"
               :alt="service.title + ' image'"
-              class="w-full h-40 md:h-48 object-cover"
+              class="w-full h-48 md:h-64 object-cover object-[center_20%]"
             />
             <div class="p-5 md:p-6">
               <h3 class="text-lg md:text-xl font-semibold text-amber-900 dark:text-amber-100">{{ service.title }}</h3>

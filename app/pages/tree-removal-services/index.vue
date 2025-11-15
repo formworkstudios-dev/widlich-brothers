@@ -29,7 +29,7 @@
             'Safe dismantling and removal including large/dangerous trees',
             'Brush and debris hauling, site clean-up',
             'Stump grinding available on request',
-            'Free estimates and flexible scheduling'
+            'Free consultations and flexible scheduling'
           ]"
         />
         <ServiceArea
@@ -64,7 +64,7 @@ interface FaqItem { label: string; content: string }
 const faqItems: FaqItem[] = [
   {
     label: 'Do you offer free estimates?',
-    content: 'Yes. We provide free, no-obligation estimates for all tree removal work.'
+    content: 'Quick phone consultations are always free. For on-site estimates, the cost is credited toward your project if you decide to move forward with our services.'
   },
   {
     label: 'Are you fully insured?',

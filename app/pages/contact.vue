@@ -75,18 +75,19 @@ function onError(e: FormErrorEvent) {
         class="relative z-10 flex flex-col items-center justify-center w-full h-full"
         style="padding-top:4.5rem;"
       >
-        <h1 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg text-center">Contact Weidlich Brothers
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg text-center mx-6">Contact Weidlich
+          Brothers
           Tree Care</h1>
       </div>
     </div>
     <UContainer class="pt-8 pb-16 max-w-3xl flex-1 flex justify-center ">
       <div class="w-full max-w-2xl mx-auto">
         <h2 class="text-2xl font-bold mb-4 text-amber-900">Get In Touch</h2>
-        <p class="text-lg mb-4">
+        <p class="text-lg mb-4 leading-relaxed">
           For questions, quotes, or to schedule service, call us at <a
             href="tel:+15707033963"
             class="text-amber-700 underline"
-          >1-570-7033963</a> or email <a
+          >570-703-3963</a> or email <a
             href="mailto:info@weidlichbrotherstreecare.com"
             class="text-amber-700 underline"
           >info@weidlichbrotherstreecare.com</a>.

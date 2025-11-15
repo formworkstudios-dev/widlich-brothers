@@ -14,8 +14,9 @@ export default defineAppConfig({
 
     accordion: {
       slots: {
-        item: "border-b border-amber-100 last:border-b-0",
+        item: "border-b border-amber-100 last:border-b-0 leading-loose",
         trigger: "cursor-pointer",
+        body: "leading-relaxed",
       },
     },
     button: {

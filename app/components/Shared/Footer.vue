@@ -37,7 +37,7 @@
           <NuxtLink
             to="/tree-removal-services"
             class="text-amber-800 dark:text-amber-100 hover:underline transition-colors text-sm"
-          >Tree Removal Services</NuxtLink>
+          >Tree Removal</NuxtLink>
           <NuxtLink
             to="/tree-removal-services/tree-stump-gridning"
             class="text-amber-800 dark:text-amber-100 hover:underline transition-colors text-sm"

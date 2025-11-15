@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div class="flex justify-center px-4 md:px-0 pt-10">
+  <div class="flex justify-center pt-8">
     <div
       class="max-w-4xl w-full flex flex-col-reverse md:flex-row items-stretch gap-0 rounded-none p-0 border border-amber-200 dark:border-amber-800 bg-transparent overflow-hidden"
     >
@@ -32,14 +32,14 @@ const props = withDefaults(defineProps<Props>(), {
           to="tel:+15707033963"
           class="font-semibold w-full md:w-auto text-center md:text-left"
         >
-          <span class="w-full">Call 570-703-3963</span>
+          <span class="w-full">Call Now 570-703-3963</span>
         </UButton>
       </div>
-      <div class="flex-1 flex p-0 min-h-[180px] md:min-h-0 px-6 md:px-0 justify-start">
+      <div class="flex-1 flex p-0 min-h-[180px] md:min-h-0  justify-start">
         <img
           :src="props.imageUrl"
           :alt="`${props.serviceName} CTA`"
-          class="w-full h-40 md:h-full object-cover"
+          class="w-full md:h-full object-fill"
         />
       </div>
     </div>

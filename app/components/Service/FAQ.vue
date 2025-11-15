@@ -19,7 +19,7 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="flex justify-center accordion px-4 md:px-0">
+  <div class="flex justify-center accordion ">
     <UCard class="max-w-3xl w-full rounded-none">
       <template #header>
         <h2 class="text-3xl font-bold mb-4 text-amber-900">{{ props.title }}</h2>

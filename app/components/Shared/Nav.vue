@@ -94,7 +94,7 @@ watch(() => route.path, () => {
       <div class="hidden md:flex gap-8 items-center">
         <div class="relative dropdown">
           <button
-            class="nav-link flex items-center gap-1"
+            class="nav-link flex items-center gap-1 cursor-pointer"
             type="button"
             @click="toggleServices"
           >
@@ -109,7 +109,7 @@ watch(() => route.path, () => {
               <NuxtLink
                 to="/tree-removal-services"
                 class="block px-4 py-2 hover:bg-amber-100 dark:hover:bg-amber-800"
-              >Tree Removal Services</NuxtLink>
+              >Tree Removal</NuxtLink>
               <NuxtLink
                 to="/tree-removal-services/tree-stump-gridning"
                 class="block px-4 py-2 hover:bg-amber-100 dark:hover:bg-amber-800"
@@ -127,7 +127,7 @@ watch(() => route.path, () => {
         </div>
         <div class="relative dropdown">
           <button
-            class="nav-link flex items-center gap-1"
+            class="nav-link flex items-center gap-1 cursor-pointer"
             type="button"
             @click="toggleLocations"
           >
