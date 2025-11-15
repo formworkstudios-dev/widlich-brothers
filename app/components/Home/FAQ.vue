@@ -17,7 +17,7 @@ const faqItems = [
   },
   {
     label: 'Do you offer free estimates?',
-    content: 'Yes, we offer free, no-obligation estimates for all tree care and removal services.'
+    content: 'Quick phone consultations are always free. For on-site estimates, the cost is credited toward your project if you decide to move forward with our services.'
   },
   {
     label: 'What areas do you serve?',
@@ -35,10 +35,8 @@ const faqItems = [
 </script>
 
 <template>
-  <UContainer class="flex justify-center accordion">
-    <UCard
-      class="max-w-2xl w-full rounded-none bg-transparent border border-amber-200 dark:border-amber-800 bg-amber-50"
-    >
+  <div class="flex justify-center accordion px-4">
+    <UCard class="max-w-3xl w-full rounded-none ">
       <template #header>
         <h2 class="text-3xl font-bold mb-4 text-amber-900">Frequently Asked Questions</h2>
       </template>
@@ -47,7 +45,7 @@ const faqItems = [
         class=""
       />
     </UCard>
-  </UContainer>
+  </div>
 </template>
 
 

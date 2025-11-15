@@ -28,7 +28,7 @@ const images = [
     </div>
     <div class="md:hidden grid grid-cols-2 gap-3 px-4">
       <div
-        v-for="img in images"
+        v-for="img in images.slice(0, 4)"
         :key="img"
         class="w-full flex"
       >

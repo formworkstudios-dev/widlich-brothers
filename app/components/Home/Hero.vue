@@ -32,21 +32,21 @@ import { NuxtImg } from '#components'
             Services in Northeastern PA</h1>
           <p class="text-xl md:!text-2xl text-white/90 max-w-xl mx-auto font-semibold">Professional Tree Removal and
             Care Serving
-            Pittston, Scranton, the Poconos, and all of Northeast PA</p>
+            Pittston, Scranton, the Poconos, and all of NEPA.</p>
         </div>
         <UFieldGroup
           size="xl"
           class="gap-4 text-white mt-2 flex-col md:flex-row w-full mx-auto items-center justify-center"
         >
-          <UButton class="text-white w-full md:w-auto">
+          <UButton class="text-white w-full md:w-auto border border-opacity-50">
             <span class="w-full text-center block">Our Services</span>
           </UButton>
           <UButton
             variant="outline"
-            class="text-white w-full md:w-auto"
+            class="text-white w-full md:w-auto border backdrop-blur-sm "
             to="tel:+15707033963"
           >
-            <span class="w-full text-center block">Call Now 1-570-7033963</span>
+            <span class="w-full text-center block">Call Now 570-703-3963</span>
           </UButton>
         </UFieldGroup>
       </div>

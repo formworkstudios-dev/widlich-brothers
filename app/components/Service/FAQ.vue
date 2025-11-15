@@ -19,25 +19,14 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="flex justify-center accordion w-full">
-    <UCard
-      class="w-full rounded-none bg-transparent border border-amber-200 dark:border-amber-800"
-      :ui="{
-        root: 'overflow-hidden bg-amber-50 dark:bg-amber-950',
-        header: 'p-0 bg-amber-100 dark:bg-amber-900 border-b border-amber-200 dark:border-amber-800',
-        body: 'p-0 bg-transparent'
-      }"
-    >
+  <div class="flex justify-center accordion px-4 md:px-0">
+    <UCard class="max-w-3xl w-full rounded-none">
       <template #header>
-        <h2 class="text-3xl font-bold text-amber-900 dark:text-amber-100 px-4 sm:px-6 py-4">{{ props.title }}</h2>
+        <h2 class="text-3xl font-bold mb-4 text-amber-900">{{ props.title }}</h2>
       </template>
       <UAccordion
         :items="props.items"
-        :ui="{
-          item: 'bg-transparent',
-          trigger: 'px-4 sm:px-6 py-3.5',
-          body: 'px-4 sm:px-6 pb-3.5'
-        }"
+        class=""
       />
     </UCard>
   </div>

@@ -81,6 +81,18 @@
         <div class="text-xs dark:text-amber-100">&copy; {{ new Date().getFullYear() }} Weidlich Brothers Tree Care. All
           rights reserved.
         </div>
+        <a
+          href="https://www.facebook.com/weidlichbrotherstreecare"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-amber-700 dark:text-amber-200 hover:text-amber-900 dark:hover:text-amber-100 transition-colors"
+          aria-label="Visit our Facebook page"
+        >
+          <UIcon
+            name="i-mdi-facebook"
+            class="size-6"
+          />
+        </a>
       </div>
     </div>
   </footer>

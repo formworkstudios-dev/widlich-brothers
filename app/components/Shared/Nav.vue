@@ -92,24 +92,6 @@ watch(() => route.path, () => {
         <span class="text-xl md:text-2xl font-bold fancy-text">{{ siteName }}</span>
       </NuxtLink>
       <div class="hidden md:flex gap-8 items-center">
-        <NuxtLink
-          to="/"
-          class="nav-link"
-          :class="[useLightText ? 'text-white' : 'text-amber-950']"
-          style="color: inherit !important;"
-        >Home</NuxtLink>
-        <NuxtLink
-          to="/about"
-          class="nav-link"
-          :class="[useLightText ? 'text-white' : 'text-amber-950']"
-          style="color: inherit !important;"
-        >About</NuxtLink>
-        <NuxtLink
-          to="/contact"
-          class="nav-link"
-          :class="[useLightText ? 'text-white' : 'text-amber-950']"
-          style="color: inherit !important;"
-        >Contact</NuxtLink>
         <div class="relative dropdown">
           <button
             class="nav-link flex items-center gap-1"
@@ -176,6 +158,18 @@ watch(() => route.path, () => {
             </div>
           </transition>
         </div>
+        <NuxtLink
+          to="/about"
+          class="nav-link"
+          :class="[useLightText ? 'text-white' : 'text-amber-950']"
+          style="color: inherit !important;"
+        >About</NuxtLink>
+        <NuxtLink
+          to="/contact"
+          class="nav-link"
+          :class="[useLightText ? 'text-white' : 'text-amber-950']"
+          style="color: inherit !important;"
+        >Contact</NuxtLink>
         <!-- <NuxtLink to="/posts" class="nav-link">Blog</NuxtLink> -->
         <UButton
           size="xl"
@@ -189,28 +183,37 @@ watch(() => route.path, () => {
         @click="toggleMenu"
         aria-label="Open menu"
       >
-        <span v-if="!menuOpen">☰</span>
-        <span v-else>✕</span>
+        <UIcon
+          v-if="!menuOpen"
+          name="i-mdi-menu"
+          class="size-6"
+        />
+        <UIcon
+          v-else
+          name="i-mdi-close"
+          class="size-6"
+        />
       </button>
     </div>
     <transition name="flyout">
       <div
         v-if="menuOpen"
         class="md:hidden fixed top-0 left-0 w-screen h-screen flex flex-col z-50 shadow-lg bg-default"
-        style="padding-top: 4rem;"
       >
-        <button
-          class="absolute top-4 right-4 text-3xl p-2"
-          @click="toggleMenu"
-          aria-label="Close menu"
-        >✕</button>
+        <div class="flex justify-end items-center p-2 w-full">
+          <button
+            class="text-stone-900 p-2"
+            @click="toggleMenu"
+            aria-label="Close menu"
+          >
+            <UIcon
+              name="i-mdi-close"
+              class="size-6"
+            />
+          </button>
+        </div>
         <div class="flex flex-col gap-8 items-center mt-8">
 
-          <NuxtLink
-            to="/"
-            class="text-stone-900"
-            @click="toggleMenu"
-          >Home</NuxtLink>
           <NuxtLink
             to="/about"
             @click="toggleMenu"
@@ -222,7 +225,7 @@ watch(() => route.path, () => {
             @click="toggleMenu"
           >Contact</NuxtLink>
           <div class="w-full">
-            <div class="mb-2 text-stone-900 mx-auto w-full text-center">Services</div>
+            <div class="mb-2 text-stone-900 mx-auto w-full text-center font-semibold underline">Services</div>
             <NuxtLink
               to="/tree-removal-services"
               @click="toggleMenu"
@@ -245,7 +248,7 @@ watch(() => route.path, () => {
             >Land Clearing</NuxtLink>
           </div>
           <div class="w-full mt-4">
-            <div class="mb-2 text-stone-900 mx-auto w-full text-center">Locations</div>
+            <div class="mb-2 text-stone-900 mx-auto w-full text-center font-semibold underline">Locations</div>
             <NuxtLink
               to="/tree-removal-services/northeastern-pa"
               @click="toggleMenu"

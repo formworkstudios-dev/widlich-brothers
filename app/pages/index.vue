@@ -16,16 +16,15 @@ definePageMeta({
   <HomeHero />
   <div
     id="content-wrapper"
-    class="flex flex-col pt-20 md:pt-32"
+    class="flex flex-col py-18 md:py-26 gap-22 md:gap-26 "
   >
     <HomeAbout />
     <HomeEquipment />
     <HomeServices />
     <HomeContact />
-    <section class="bg-amber-50/10 py-32 flex flex-col gap-20">
-      <HomeCTA />
-      <HomeFAQ />
-    </section>
+    <HomeFAQ />
+    <HomeCTA />
+
   </div>
 </template>
 

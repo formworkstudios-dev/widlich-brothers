@@ -14,10 +14,6 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "nuxt-resend",
   ],
-
-  colorMode: {
-    preference: "light",
-  },
   ui: {
     colorMode: false,
   },

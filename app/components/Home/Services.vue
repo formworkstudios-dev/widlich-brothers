@@ -51,7 +51,7 @@ const services = [
 </script>
 
 <template>
-  <div class=" bg-amber-50/10 dark:bg-amber-950 dark:border-amber-900 py-32">
+  <div class=" bg-amber-50/10 dark:bg-amber-950 dark:border-amber-900">
     <UContainer>
       <div>
         <h2 class="text-3xl font-bold text-center text-amber-900 dark:text-amber-100">Our Services</h2>
@@ -60,7 +60,7 @@ const services = [
           <article
             v-for="service in services"
             :key="service.title"
-            class="border border-amber-200 dark:border-amber-800 bg-transparent overflow-hidden"
+            class="border border-amber-100 dark:border-amber-800 bg-transparent overflow-hidden"
           >
             <NuxtImg
               :src="service.image"
@@ -69,7 +69,7 @@ const services = [
             />
             <div class="p-5 md:p-6">
               <h3 class="text-lg md:text-xl font-semibold text-amber-900 dark:text-amber-100">{{ service.title }}</h3>
-              <p class="mt-2 text-sm md:text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">{{
+              <p class="mt-2 text-sm md:text-base leading-relaxed">{{
                 service.text }}</p>
               <ul
                 v-if="service.features?.length"
@@ -84,10 +84,13 @@ const services = [
               <div class="mt-5">
                 <NuxtLink
                   :to="service.path"
-                  class="inline-flex items-center gap-2 text-amber-800 dark:text-amber-200 text-sm font-medium hover:underline"
+                  class="inline-flex items-center gap-2 text-amber-800 dark:text-amber-200 text-sm font-medium hover:underline group"
                 >
                   <span>Learn more</span>
-                  <UIcon name="i-mdi-chevron-double-right" />
+                  <UIcon
+                    name="i-mdi-chevron-double-right"
+                    class="transition-transform duration-300 group-hover:translate-x-1"
+                  />
                 </NuxtLink>
               </div>
             </div>

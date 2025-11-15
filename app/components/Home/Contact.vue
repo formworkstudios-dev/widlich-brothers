@@ -115,7 +115,7 @@ onMounted(async () => {
 
 <template>
   <div
-    class="border-y py-6 md:py-16 border-amber-200 bg-amber-100/30 text-amber-900 dark:bg-amber-950 dark:text-amber-100 dark:border-amber-900"
+    class="border-y py-6 md:py-16 px-4 border-amber-100 bg-amber-100/30 text-amber-900 dark:bg-amber-950 dark:text-amber-100 dark:border-amber-900"
   >
     <UContainer class="flex flex-col md:flex-row items-start justify-between gap-8 py-12 px-2 md:px-12">
       <div class="flex-1 self-start">
@@ -129,8 +129,8 @@ onMounted(async () => {
             />
             <a
               href="tel:+15707033963"
-              class="text-lg text-toned hover:underline"
-            >1-570-7033963</a>
+              class="text-toned hover:underline"
+            >570-703-3963</a>
           </div>
           <div class="flex items-center gap-3">
             <UIcon
@@ -140,7 +140,7 @@ onMounted(async () => {
             />
             <a
               href="mailto:info@weidlichbrotherstreecare.com"
-              class="text-lg text-toned hover:underline"
+              class="text-toned hover:underline"
             >info@weidlichbrotherstreecare.com</a>
           </div>
           <div class="flex items-center gap-3">
@@ -149,10 +149,16 @@ onMounted(async () => {
               class="text-amber-700 dark:text-amber-200"
               size="20"
             />
-            <p class="text-lg text-toned">149 Johnson St, Pittston, PA 18640</p>
+            <p class="text-toned"><nuxt-link to="https://g.page/r/Cdml3HI0EAruEBM/">149 Johnson St, Pittston, PA
+                18640</nuxt-link></p>
           </div>
         </div>
-        <h3 class="text-amber-900 dark:text-amber-100 text-2xl font-bold mb-4">Service Area</h3>
+        <h3 class="
+                text-amber-900
+                dark:text-amber-100
+                text-2xl
+                font-bold
+                mb-4">Service Area</h3>
         <p class="text-lg text-toned mb-4">
           Professional tree care and removal services throughout Pittston, Poconos, Scranton, Wilkes-Barre, and
           surrounding communities in Luzerne and Lackawanna Counties.
@@ -161,7 +167,7 @@ onMounted(async () => {
       <div class="flex-1 flex flex-col items-center w-full md:w-auto">
         <div
           ref="mapContainer"
-          class="w-full h-64 md:h-80 lg:h-96 bg-amber-50 border border-amber-200 dark:bg-amber-900 dark:border-amber-800"
+          class="w-full h-64 md:h-80 lg:h-96 bg-amber-50 border border-amber-100 dark:bg-amber-900 dark:border-amber-800"
           style="min-height: 220px;"
         />
         <p class="!text-sm text-amber-800 mt-2 text-center dark:text-amber-200">
