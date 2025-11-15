@@ -5,7 +5,7 @@
 
 <template>
   <div class=" bg-amber-50/10 text-amber-900 dark:bg-amber-950 dark:text-amber-100">
-    <UContainer class="flex flex-col md:flex-row items-stretch justify-between gap-8 px-4">
+    <UContainer class="flex flex-col-reverse md:flex-row items-stretch justify-between gap-8 px-4">
       <div class="flex-1 text-left flex flex-col justify-center">
         <h2 class="text-3xl font-bold mb-4 hidden md:flex">About Weidlich Brothers Tree Care</h2>
 
